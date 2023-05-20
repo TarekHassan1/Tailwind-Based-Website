@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    screens: {
+                        "lg": "991px",
+                        "xl": "1199px",
+                        "md": "767px",
+                        "sm": "576px"
+                    },
+                    colors: {
+                        'react': "#2596be"
+                    },
+                },
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="final.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class=" z-10 relative w-full bg-[#2124B1] text-white border-b-[0.5px] border-[#ffffff1a]">
+        <nav class="max-lg:py-3 flex-wrap flex w-[86.5%] justify-between items-center ml-auto mr-auto">
+            <div class="max-lg:mb-8">
+                <h1 class="text-4xl font-bold whitespace-nowrap"> <i class=" fa-solid fa-magnifying-glass "></i> SEO
+                    <span class="text-xl -ml-2 -mt-2 ">Master</span> </h1>
+            </div>
+            <div
+                class="next-half max-lg:text-black flex justify-center items-center max-lg:flex max-lg:flex-col max-lg:top-[60px] max-lg:w-full max-lg:left-0 max-lg:bg-[#ffffff] max-lg:h-0 max-lg:overflow-hidden max-lg:transition-height max-lg:duration-1000 max-lg:ease-in-out ">
+                <ul class="links list-none flex items-center justify-center max-lg:flex-col max-lg:w-full ">
+                    <li class="text-[#4777f1]"><a href="">Home</a></li>
+                    <li class=""><a href="">About</a></li>
+                    <li class=""><a href="">Service</a></li>
+                    <li class=""><a href="">Project</a></li>
+                    <li class=" pages"><a href=""
+                            class=" relative before:absolute before:-right-3 before:top-2.5 before:border-4 before:border-r-transparent before:border-b-transparent before:border-l-transparent">Pages</a>
+                    </li>
+                    <li class=""><a href="">Contact</a></li>
+                </ul>
+                <ul
+                    class=" absolute pages-ul top-24 hidden rounded-xl right-[18rem] p-5 w-40 bg-white font-normal text-[#212529]">
+                    <li class="mb-2 ">Our Team</li>
+                    <li class="mb-2 ">Testmonials</li>
+                    <li class="mb-2 ">404Page</li>
+                </ul>
+                <div class="ml-3 mb-2 mt-2 max-lg:w-full"> <i
+                        class="ml-3 mr-3 fa-solid fa-magnifying-glass text-[#4777f5]"></i> <button
+                        class="bg-[#4777f5] rounded-[20px] text-white p-2 pl-5 pr-5 ">Pro Version</button> </div>
+            </div>
+            <i
+                class="absolute top-8 right-16 menu-icon hover:cursor-pointer lg:hidden fa-solid fa-bars text-white border-[rgba(0,0,0,0.1)]"></i>
+        </nav>
+    </header>
+    <section class="home h-[730px] max-lg:h-[1040px] bg-[#2124B1] ">
+        <div class="relative overflow-hidden mx-auto h-full w-full flex items-center justify-center">
+            <div class="content w-[84%] flex items-center justify-center max-lg:text-center max-lg:flex-col">
+                <div class="text-white max-lg:mb-5 relative z-20">
+                    <h2 class="home-h2 text-4xl/[3.5rem] max-lg:text-[2.5rem]/[3.5rem] font-bold">All in one SEO tool
+                        need to grow your business rapidly </h2>
+                    <p class="home-p my-6 text-lg">Tempor rebum no at dolore lorem clita rebum rebum ipsum rebum stet
+                        dolor sed justo kasd. Ut dolor sed magna dolor sea diam. Sit diam sit justo amet ipsum vero
+                        ipsum clita lorem </p>
+                    <div class="btn-container w-fit overflow-hidden"> <button
+                            class="home-btn1 text-black hover:cursor-pointer bg-white px-8 py-3 mr-4 rounded-3xl">Free
+                            Quote</button> <button
+                            class="home-btn2 hover:bg-white hover:text-black hover:cursor-pointer text-white border-[#9194da] border-2 px-8 py-3 rounded-3xl bg-transparent">Contact
+                            Us</button> </div>
+                </div>
+                <div class=" mt-5"> <img src="img/hero.png" class="max-w-none max-xl:w-[408px]" alt=""> <img
+                        src="img/bg-dot.png" class="absolute top-4 left-4" alt=""> <img src="img/bg-dot.png"
+                        class="absolute right-0 bottom-40" alt=""> <img src="img/bg-round.png"
+                        class="absolute top-0 right-[35%] max-md:right-[27%]" alt=""> <img src="img/bg-tree.png"
+                        class="absolute bottom-0 left-[35%]" alt=""> <img src="img/bg-bottom-hero.png"
+                        class="absolute left-0 bottom-0 xl:hidden" alt=""> </div>
+            </div>
+        </div>
+    </section>
+    <section class="about pt-24 pb-11">
+        <div class="container mx-auto grid max-lg:grid-cols-1 grid-cols-2 place-items-center">
+            <div class="right max-lg:mb-5 max-lg:w-11/12 ">
+                <h6 class="mb-3 font-semibold abouth6 relative ml-7">About Us</h6>
+                <h2 class="text-3xl font-bold mb-5 active relative">The best SEO solution with 10 years of experience
+                </h2>
+                <p class="mb-3">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam amet
+                    diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita
+                    duo justo et tempor eirmod magna dolore erat amet </p>
+                <div class="mb-3 flex justify-between w-3/6"> <span><i class="text-[#1c1f96] fa-solid fa-check"></i>
+                        Award Winning</span> <span><i class="text-[#1c1f96] fa-solid fa-check"></i> 24/7 Support</span>
+                </div>
+                <div class="mb-3 flex justify-between w-3/6"> <span><i class="text-[#1c1f96] fa-solid fa-check"></i>
+                        Professional Staff</span> <span><i class="text-[#1c1f96] fa-solid fa-check"></i> Fair
+                        Prices</span> </div>
+                <div class="socials "> <button class="text-white bg-[#1c1f96] rounded-3xl px-7 py-2 font-bold">Read
+                        More</button> <i class="fa-brands fa-facebook-f ml-3 cursor-pointer"></i> <i
+                        class="fa-brands fa-twitter cursor-pointer"></i> <i
+                        class="fa-brands fa-instagram cursor-pointer"></i> <i
+                        class="fa-brands fa-linkedin-in cursor-pointer"></i> </div>
+            </div>
+            <div class="image-container max-lg:mt-5 "> <img src="img/about.jpg" alt=""> </div>
+        </div>
+    </section>
+    <section class="subscribe text-white ">
+        <div class="container h-[100%] w-[85%] mx-auto flex items-center gap-7">
+            <div class="right w-[50%] max-md:w-11/12 max-md:mb-5 relative">
+                <h2 class="text-2xl font-bold leading-10">Ready to get started</h2>
+                <p class="leading-10 mb-2">Diam elitr est dolore at sanctus nonumy.</p>
+                <div class="relative"> <input type="text" class="rounded-3xl text-[#1c1f96] py-3 px-4 w-full"
+                        placeholder="Enter Your Email" name="" id=""> <i
+                        class="absolute hover:cursor-pointer right-8 top-1.5 text-[#1c1f96] text-2xl fa-solid fa-paper-plane "></i>
+                </div>
+            </div>
+            <div class="image-container w-[50%] max-md:hidden"> <img src="img/newsletter.png" alt=""> </div>
+        </div>
+    </section>
+    <section class="services overflow-hidden">
+        <div class="header flex items-center justify-center flex-col w-[98vw]">
+            <h6 class="abouth6 relative ml-7 font-semibold ">our Services</h6>
+            <h2 class="active relative text-3xl font-bold before:left-[43%] after:left-[56%]">What Solutions We Provide
+            </h2>
+        </div>
+        <div class="container flex flex-wrap mx-auto gap-10 gap-y-0 justify-center items-center">
+            <div class="service">
+                <i class="fa-solid fa-house "></i> <img src="img/icon-shape-primary.png" alt="">
+                <h2 class="">SEO Optimization</h2>
+                <p class="">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet
+                    lorem.</p>
+                <button class="">Read More</button>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-house "></i> <img src="img/icon-shape-primary.png" alt="">
+                <h2>Web Design</h2>
+                <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.
+                </p>
+                <button>Read More</button>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-house "></i> <img src="img/icon-shape-primary.png" alt="">
+                <h2>Social Media Marketing</h2>
+                <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.
+                </p>
+                <button>Read More</button>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-house "></i> <img src="img/icon-shape-primary.png" alt="">
+                <h2>Email Marketing</h2>
+                <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.
+                </p>
+                <button>Read More</button>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-house "></i> <img src="img/icon-shape-primary.png" alt="">
+                <h2>PPC Advertising</h2>
+                <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.
+                </p>
+                <button>Read More</button>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-house "></i> <img src="img/icon-shape-primary.png" alt="">
+                <h2>App Development</h2>
+                <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.
+                </p>
+                <button>Read More</button>
+            </div>
+        </div>
+    </section>
+    <section class="projects overflow-hidden mt-16 mb-16">
+        <div class="header flex justify-center flex-col items-center mb-3">
+            <h6 class="mb-3 font-semibold abouth6 relative ml-5">our Projects</h6>
+            <h2 class="active relative text-3xl font-bold before:left-[45%] after:left-[58.3%]">Recently Launched
+                Projects </h2>
+        </div>
+        <div class="types text-center flex justify-center items-center mt-12"> <span
+                class=" active-type hover:cursor-pointer">All</span> <span
+                class="mr-4 hover:cursor-pointer ml-4 ">Design</span> <span
+                class="mr-4 hover:cursor-pointer ml-4">Development</span> </div>
+        <div class="projects-container mx-auto mt-10 flex justify-center items-center gap-6 flex-wrap">
+            <div class="project all design">
+                <img src="img/portfolio-1.jpg" class="w-[282px] rounded-xl " alt="">
+                <div class="project-overaly .project-1">
+                    <div class="self-end"><img src="img/icon-shape-white.png" alt=""></div>
+                    <div class="pb-8 pl-8">
+                        <h6><i class="fa fa-folder me-2"></i>Web Desgin</h6>
+                        <h2 class="font-semibold text-2xl">Project Name</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="project all development">
+                <img src="img/portfolio-2.jpg" class="w-[282px] rounded-xl " alt="">
+                <div class="project-overaly opacity-100">
+                    <div class="self-end"><img src="img/icon-shape-white.png" alt=""></div>
+                    <div class="pb-8 pl-8">
+                        <h6><i class="fa fa-folder me-2"></i>Web Desgin</h6>
+                        <h2 class="font-semibold text-2xl">Project Name</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="project all design">
+                <img src="img/portfolio-3.jpg" class="w-[282px] rounded-xl " alt="">
+                <div class="project-overaly ">
+                    <div class="self-end"><img src="img/icon-shape-white.png" alt=""></div>
+                    <div class="pb-8 pl-8">
+                        <h6><i class="fa fa-folder me-2"></i>Web Desgin</h6>
+                        <h2 class="font-semibold text-2xl">Project Name</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="project all development">
+                <img src="img/portfolio-4.jpg" class="w-[282px] rounded-xl " alt="">
+                <div class="project-overaly ">
+                    <div class="self-end"><img src="img/icon-shape-white.png" alt=""></div>
+                    <div class="pb-8 pl-8">
+                        <h6><i class="fa fa-folder me-2"></i>Web Desgin</h6>
+                        <h2 class="font-semibold text-2xl">Project Name</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="project all design">
+                <img src="img/portfolio-5.jpg" class="w-[282px] rounded-xl " alt="">
+                <div class="project-overaly ">
+                    <div class="self-end"><img src="img/icon-shape-white.png" alt=""></div>
+                    <div class="pb-8 pl-8">
+                        <h6><i class="fa fa-folder me-2"></i>Web Desgin</h6>
+                        <h2 class="font-semibold text-2xl">Project Name</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="project all development">
+                <img src="img/portfolio-6.jpg" class="w-[282px] rounded-xl " alt="">
+                <div class="project-overaly ">
+                    <div class="self-end"><img src="img/icon-shape-white.png" alt=""></div>
+                    <div class="pb-8 pl-8">
+                        <h6><i class="fa fa-folder me-2"></i>Web Desgin</h6>
+                        <h2 class="font-semibold text-2xl">Project Name</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testmonials ">
+        <div class="container flex h-full overflow-hidden flex-wrap justify-center items-center mx-auto">
+            <div class="reviews flex">
+                <div class="review border-[1px] p-4 border-white rounded-xl text-white h-[250px] w-[270px] mr-6">
+                    <i class="fa fa-quote-left fa-2x mb-3"></i>
+                    <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                    </p>
+                    <div class="client flex items-center mt-5">
+                        <img src="img/testimonial-3.jpg" class="rounded-full w-12 h-12" alt="">
+                        <div class="text ml-3">
+                            <h2 class="font-semibold">Client Name</h2>
+                            <h3 class="text-gray-400">Profession</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="review border-[1px] p-4 border-white rounded-xl text-white h-[250px] w-[270px] mr-6">
+                    <i class="fa fa-quote-left fa-2x mb-3"></i>
+                    <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                    </p>
+                    <div class="client flex items-center mt-5">
+                        <img src="img/testimonial-2.jpg" class="rounded-full w-12 h-12" alt="">
+                        <div class="text ml-3">
+                            <h2 class="font-semibold">Client Name</h2>
+                            <h3 class="text-gray-400">Profession</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="review border-[1px] p-4 border-white rounded-xl text-white h-[250px] w-[270px] mr-6">
+                    <i class="fa fa-quote-left fa-2x mb-3"></i>
+                    <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                    </p>
+                    <div class="client flex items-center mt-5">
+                        <img src="img/testimonial-3.jpg" class="rounded-full w-12 h-12" alt="">
+                        <div class="text ml-3">
+                            <h2 class="font-semibold">Client Name</h2>
+                            <h3 class="text-gray-400">Profession</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="review border-[1px] p-4 border-white rounded-xl text-white h-[250px] w-[270px] mr-6">
+                    <i class="fa fa-quote-left fa-2x mb-3"></i>
+                    <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                    </p>
+                    <div class="client flex items-center mt-5">
+                        <img src="img/testimonial-2.jpg" class="rounded-full w-12 h-12" alt="">
+                        <div class="text ml-3">
+                            <h2 class="font-semibold">Client Name</h2>
+                            <h3 class="text-gray-400">Profession</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="review border-[1px] p-4 border-white rounded-xl text-white h-[250px] w-[270px] mr-6">
+                    <i class="fa fa-quote-left fa-2x mb-3"></i>
+                    <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                    </p>
+                    <div class="client flex items-center mt-5">
+                        <img src="img/testimonial-3.jpg" class="rounded-full w-12 h-12" alt="">
+                        <div class="text ml-3">
+                            <h2 class="font-semibold">Client Name</h2>
+                            <h3 class="text-gray-400">Profession</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="review border-[1px] p-4 border-white rounded-xl text-white h-[250px] w-[270px] mr-6">
+                    <i class="fa fa-quote-left fa-2x mb-3"></i>
+                    <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                    </p>
+                    <div class="client flex items-center mt-5">
+                        <img src="img/testimonial-2.jpg" class="rounded-full w-12 h-12" alt="">
+                        <div class="text ml-3">
+                            <h2 class="font-semibold">Client Name</h2>
+                            <h3 class="text-gray-400">Profession</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="review border-[1px] p-4 border-white rounded-xl text-white h-[250px] w-[270px] mr-6">
+                    <i class="fa fa-quote-left fa-2x mb-3"></i>
+                    <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                    </p>
+                    <div class="client flex items-center mt-5">
+                        <img src="img/testimonial-3.jpg" class="rounded-full w-12 h-12" alt="">
+                        <div class="text ml-3">
+                            <h2 class="font-semibold">Client Name</h2>
+                            <h3 class="text-gray-400">Profession</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="team pb-12 mb-12">
+        <div class="header flex justify-center flex-col items-center mb-3">
+            <h6 class="mb-3 font-semibold abouth6 relative ml-5">our Team</h6>
+            <h2 class="active relative text-3xl font-bold before:left-[45%] after:left-[58.3%]">Meet Our Team Members
+            </h2>
+        </div>
+        <div class="container mx-auto mt-12 w-10/12/12 ">
+            <div class="members max-lg:flex-wrap max-lg:gap-24 flex justify-center">
+                <div class="member max-lg:w-3/6 max-sm:min-w-[75%] relative w-1/4 mr-12 ml-16 max-sm:ml-28">
+                    <img src="img/team-1.jpg" class="rounded-2xl relative z-10" alt="">
+                    <div
+                        class="behind position hover:bg-[#2124B1] absolute rounded-xl top-12 z-0 -left-[64px] w-full p-4 h-[110%]">
+                        <div class="socials flex flex-col ml-2"> <i
+                                class="fa-brands fa-facebook-f mb-5 text-xl text-[#2124B1] cursor-pointer"></i> <i
+                                class="fa-brands fa-twitter mb-5 text-xl text-[#2124B1] cursor-pointer"></i> <i
+                                class="fa-brands fa-instagram mb-5 text-xl text-[#2124B1] cursor-pointer"></i> <i
+                                class="fa-brands fa-linkedin-in mb-5 text-xl text-[#2124B1] cursor-pointer"></i> </div>
+                        <div class="name-title absolute bottom-4">
+                            <h2 class="font-semibold text-xl">Jhon Doe</h2>
+                            <h3 class="text-gray-400">Ceo</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="member max-lg:w-3/6 max-sm:min-w-[75%] relative w-1/4 mr-12 ml-12 max-sm:ml-28">
+                    <img src="img/team-3.jpg" class="rounded-2xl relative z-10" alt="">
+                    <div
+                        class="behind position hover:bg-[#2124B1] absolute rounded-xl top-12 z-0 -left-[64px] w-full p-4 h-[110%]">
+                        <div class="socials flex flex-col ml-2"> <i
+                                class="fa-brands fa-facebook-f mb-5 text-xl text-[#2124B1] cursor-pointer"></i> <i
+                                class="fa-brands fa-twitter mb-5 text-xl text-[#2124B1] cursor-pointer"></i> <i
+                                class="fa-brands fa-instagram mb-5 text-xl text-[#2124B1] cursor-pointer"></i> <i
+                                class="fa-brands fa-linkedin-in mb-5 text-xl text-[#2124B1] cursor-pointer"></i> </div>
+                        <div class="name-title absolute bottom-4">
+                            <h2 class="font-semibold text-xl">John Michael</h2>
+                            <h3 class="text-gray-400">Manager</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="member max-lg:w-3/6 max-sm:min-w-[75%] relative w-1/4 mr-12 ml-12 max-sm:ml-28">
+                    <img src="img/team-3.jpg" class="rounded-2xl relative z-10" alt="">
+                    <div
+                        class="behind position hover:bg-[#2124B1] absolute rounded-xl top-12 z-0 -left-[64px] w-full p-4 h-[110%]">
+                        <div class="socials flex flex-col ml-2"> <i
+                                class="fa-brands fa-facebook-f mb-5 text-xl text-[#2124B1] cursor-pointer"></i> <i
+                                class="fa-brands fa-twitter mb-5 text-xl text-[#2124B1] cursor-pointer"></i> <i
+                                class="fa-brands fa-instagram mb-5 text-xl text-[#2124B1] cursor-pointer"></i> <i
+                                class="fa-brands fa-linkedin-in mb-5 text-xl text-[#2124B1] cursor-pointer"></i> </div>
+                        <div class="name-title absolute bottom-4">
+                            <h2 class="font-semibold text-xl">Noah Michael</h2>
+                            <h3 class="text-gray-400">Designer</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer text-white p-4 mt-24 max-lg:h-fit pt-28 pb-12 px-24">
+        <div class="container h-full flex items-center mx-auto max-lg:flex-wrap ">
+            <div class="touch w-1/4 max-lg:w-1/2 max-md:w-full max-lg:mb-5">
+                <h2 class="mb-3 text-xl font-semibold">Get In Touch</h2>
+                <p class="mb-3"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                <p class="mb-3"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                <p class="mb-3"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                <div class="socials flex"> <i
+                        class="hover:text-[#2124B1] mr-3 hover:bg-white border-[1px] border-[#ffffff1a] rounded-full w-10 h-10 flex justify-center items-center fa-brands fa-facebook-f cursor-pointer"></i>
+                    <i
+                        class="hover:text-[#2124B1] mr-3 hover:bg-white border-[1px] border-[#ffffff1a] rounded-full w-10 h-10 flex justify-center items-center fa-brands fa-twitter cursor-pointer"></i>
+                    <i
+                        class="hover:text-[#2124B1] mr-3 hover:bg-white border-[1px] border-[#ffffff1a] rounded-full w-10 h-10 flex justify-center items-center fa-brands fa-youtube cursor-pointer"></i>
+                    <i
+                        class="hover:text-[#2124B1] mr-3 hover:bg-white border-[1px] border-[#ffffff1a] rounded-full w-10 h-10 flex justify-center items-center fa-brands fa-instagram cursor-pointer"></i>
+                    <i
+                        class="hover:text-[#2124B1] mr-3 hover:bg-white border-[1px] border-[#ffffff1a] rounded-full w-10 h-10 flex justify-center items-center fa-brands fa-linkedin-in cursor-pointer"></i>
+                </div>
+            </div>
+            <div class="links max-lg:mb-5 flex w-1/4 flex-col text-lg max-lg:w-1/2 max-md:w-full"> <a href=""
+                    class="hover:text-xl text-[#F7FAFF] "><i class="fa-solid fa-chevron-right mr-2 font-bold"></i>About
+                    Us</a> <a href="" class="hover:text-xl text-[#F7FAFF]"><i
+                        class="fa-solid fa-chevron-right mr-2 font-bold"></i>Contact Us</a> <a href=""
+                    class="hover:text-xl text-[#F7FAFF]"><i class="fa-solid fa-chevron-right mr-2 font-bold"></i>Privacy
+                    Policy</a> <a href="" class="hover:text-xl text-[#F7FAFF]"><i
+                        class="fa-solid fa-chevron-right mr-2 font-bold"></i>Terms & Condition</a> <a href=""
+                    class="hover:text-xl text-[#F7FAFF]"><i
+                        class="fa-solid fa-chevron-right mr-2 font-bold"></i>Career</a> </div>
+            <div
+                class="max-lg:mb-5 gallery flex w-1/4 flex-wrap gap-4 max-md:w-full justify-center items-center max-lg:w-full">
+                <h2 class="mb-3 text-xl font-semibold w-full text-center max-lg:text-left">Project Gallery</h2>
+                <div
+                    class="images flex flex-wrap justify-center max-lg:justify-start w-[80%] max-lg:gap-4 gap-2 max-lg:w-full">
+                    <img class="w-14 h-14 max-lg:w-40 max-lg:h-40 " src="img/portfolio-1.jpg" alt=""> <img
+                        class="w-14 h-14 max-lg:w-40 max-lg:h-40" src="img/portfolio-2.jpg" alt=""> <img
+                        class="w-14 h-14 max-lg:w-40 max-lg:h-40" src="img/portfolio-3.jpg" alt=""> <img
+                        class="w-14 h-14 max-lg:w-40 max-lg:h-40" src="img/portfolio-4.jpg" alt=""> <img
+                        class="w-14 h-14 max-lg:w-40 max-lg:h-40" src="img/portfolio-5.jpg" alt=""> <img
+                        class="w-14 h-14 max-lg:w-40 max-lg:h-40" src="img/portfolio-6.jpg" alt=""> </div>
+            </div>
+            <div class="max-lg:mb-5 newsletter w-1/4 max-lg:w-[80%] max-md:w-full">
+                <h2 class="mb-3 text-xl font-semibold">Newsletter</h2>
+                <p class="mb-4">Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare
+                    velit non vulpu</p>
+                <div class="relative"> <input type="text" class="-ml-1 rounded-3xl text-[#1c1f96] py-3 px-4 w-full"
+                        placeholder="Enter Your Email" name="" id=""> <i
+                        class="absolute hover:cursor-pointer right-8 top-1.5 text-[#1c1f96] text-2xl fa-solid fa-paper-plane "></i>
+                </div>
+            </div>
+        </div>
+        <div class="end w-full text-center text-md mt-5">
+            <hr class="mb-4 w-full mx-auto">
+            <span class="mb-4">Made With &#10084; By TarekHassan</span>
+            <div class=" mt-3"> <span class="ml-3 mr-3">Home</span> | <span class="ml-3 mr-3">Cookies</span> | <span
+                    class="ml-3 mr-3">Help</span> | <span class="ml-3 mr-3">Faqs</span> </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
