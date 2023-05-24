@@ -362,16 +362,26 @@ div .links li:hover:before {
 
 .services .container>div {
     position: relative;
-    margin-top: 3.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255/var(--tw-bg-opacity));
-    line-height: 2rem;
-    transition-property: all;
-    transition-duration: .5s;
-    transition-timing-function: cubic-bezier(.4, 0, .2, 1)
+        margin-top: 3.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        --tw-bg-opacity: 1;
+        background-color: rgb(255 255 255/var(--tw-bg-opacity));
+        line-height: 2rem;
+        transition-property: all;
+        transition-duration: .5s;
+        transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+        box-shadow: 0 0 45px #00000014;
+        background: #fff;
+        height: 350px;
+        width: calc(25% - 30px);
+        border-radius: 20px;
+        padding: 30px 25px;
+        text-align: center;
+        scale: 0;
+        opacity: 0;
+    
 }
 
 .services .container>div:hover {
@@ -381,17 +391,7 @@ div .links li:hover:before {
     color: rgb(255 255 255/var(--tw-text-opacity))
 }
 
-.services .container>div {
-    box-shadow: 0 0 45px #00000014;
-    background: #fff;
-    height: 350px;
-    width: calc(33.33333% - 27.33333px);
-    border-radius: 20px;
-    padding: 30px 25px;
-    text-align: center;
-    scale: 0;
-    opacity: 0
-}
+
 
 @media (max-width:991px) {
     .services .container>div {
@@ -568,7 +568,22 @@ div .links li:hover:before {
     margin-bottom: 60px;
     background-color: #2124b1
 }
-
+.reviews{
+    max-width: 150%;
+    cursor: grabbing;
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+.reviews:active{
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+.slider-container{
+    width: 100%;
+    overflow: hidden;
+}
 .testmonials .review {
     min-width: 13.33333%;
     padding-top: 25px;
@@ -701,7 +716,9 @@ div .links li:hover:before {
 .projects .projects-container .project:nth-of-type(6) {
     transition: 2s
 }
-
+.custom-slide {
+    width: 270px;
+}
 .testmonials {
     transform: translateY(200px);
     transition: 0.7s

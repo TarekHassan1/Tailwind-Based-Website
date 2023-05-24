@@ -1,3 +1,4 @@
+
 const Pages = document.querySelector(".pages");
 const pagesUl = document.querySelector(".pages-ul");
 const menuIcons = document.querySelector(".menu-icon");
@@ -90,7 +91,6 @@ window.addEventListener("scroll", () => {
   }
 
     if (about.offsetTop <= e + 0.8 * t) {
-      console.log("About OffSetTop" + about.offsetTop);
     about_img.style.scale = "1";
     about_img.style.opacity = "1";
     about_right.style.transform = "translateY(0px)";
@@ -155,4 +155,19 @@ projects_Types_spans.forEach((e) => {
 window.addEventListener("DOMContentLoaded", () => {
   const e = document.querySelector(".types span:nth-of-type(1)");
   e.click();
+});
+
+
+var slider = tns({
+  container: '#reviews',
+  items: 1,
+  slideBy: 'page',
+  speed: 700,
+  autoplay: true,
+  autoplayButtonOutput: false,
+  controls: true,
+  nav: false,
+  mouseDrag: true,
+  touch: true,
+
 });

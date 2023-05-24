@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tailwind-Based-Website</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -24,6 +24,7 @@
             }
         }
     </script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -249,9 +250,9 @@
         </div>
     </section>
     <section class="testmonials ">
-        <div class="container flex h-full overflow-hidden flex-wrap justify-center items-center mx-auto">
-            <div class="reviews flex">
-                <div class="review border-[1px] p-4 border-white rounded-xl text-white h-[250px] w-[270px] mr-6">
+        <div class="container flex slider h-full overflow-hidden flex-wrap justify-center items-center mx-auto">
+            <div id="reviews" class="reviews flex slider__wrapper">
+                <div class="review border-[1px] slider__slide p-4 border-white rounded-xl text-white h-[250px] w-[270px] mr-6">
                     <i class="fa fa-quote-left fa-2x mb-3"></i>
                     <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
                     </p>
@@ -263,7 +264,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="review border-[1px] p-4 border-white rounded-xl text-white h-[250px] w-[270px] mr-6">
+                <div class="review border-[1px] slider__slide p-4 border-white rounded-xl text-white h-[250px] w-[270px] mr-6">
                     <i class="fa fa-quote-left fa-2x mb-3"></i>
                     <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
                     </p>
@@ -275,7 +276,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="review border-[1px] p-4 border-white rounded-xl text-white h-[250px] w-[270px] mr-6">
+                <div class="review border-[1px] slider__slide p-4 border-white rounded-xl text-white h-[250px] w-[270px] mr-6">
                     <i class="fa fa-quote-left fa-2x mb-3"></i>
                     <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
                     </p>
@@ -287,7 +288,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="review border-[1px] p-4 border-white rounded-xl text-white h-[250px] w-[270px] mr-6">
+                <div class="review border-[1px] slider__slide p-4 border-white rounded-xl text-white h-[250px] w-[270px] mr-6">
                     <i class="fa fa-quote-left fa-2x mb-3"></i>
                     <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
                     </p>
@@ -299,7 +300,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="review border-[1px] p-4 border-white rounded-xl text-white h-[250px] w-[270px] mr-6">
+                <div class="review border-[1px] slider__slide p-4 border-white rounded-xl text-white h-[250px] w-[270px] mr-6">
                     <i class="fa fa-quote-left fa-2x mb-3"></i>
                     <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
                     </p>
@@ -311,7 +312,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="review border-[1px] p-4 border-white rounded-xl text-white h-[250px] w-[270px] mr-6">
+                <div class="review border-[1px] slider__slide p-4 border-white rounded-xl text-white h-[250px] w-[270px] mr-6">
                     <i class="fa fa-quote-left fa-2x mb-3"></i>
                     <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
                     </p>
@@ -323,7 +324,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="review border-[1px] p-4 border-white rounded-xl text-white h-[250px] w-[270px] mr-6">
+                <div class="review border-[1px] slider__slide p-4 border-white rounded-xl text-white h-[250px] w-[270px] mr-6">
                     <i class="fa fa-quote-left fa-2x mb-3"></i>
                     <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
                     </p>
@@ -451,7 +452,10 @@
                     class="ml-3 mr-3">Help</span> | <span class="ml-3 mr-3">Faqs</span> </div>
         </div>
     </section>
-    <script src="script.js"></script>
+    <script src="script.js" type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/min/tiny-slider.js"></script>
+
+
 </body>
 
 </html>
