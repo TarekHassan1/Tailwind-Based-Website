@@ -374,7 +374,7 @@ div .links li:hover:before {
         transition-timing-function: cubic-bezier(.4, 0, .2, 1);
         box-shadow: 0 0 45px #00000014;
         background: #fff;
-        height: 350px;
+        height: fit-content;
         width: calc(25% - 30px);
         border-radius: 20px;
         padding: 30px 25px;
